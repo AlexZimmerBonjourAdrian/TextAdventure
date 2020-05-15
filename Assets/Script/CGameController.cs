@@ -6,6 +6,7 @@ public class CGameController : MonoBehaviour
 {
     //Texto que es mostrado al ugador
     public Text displayText;
+    public CInputAction[] inputActions;
     //instancia de la clase CroomNavigation
     [SerializeField] public CRoomNavigation roomNavigation;
     //Lista de las Descripcioones de la Habitacion
@@ -60,7 +61,8 @@ public class CGameController : MonoBehaviour
     void ClearCollectionsForNewRoom()
     {
         IneractionDescriptionInRoom.Clear();
-       // roomNavigation.cl
+        // roomNavigation.cl
+        roomNavigation.ClearExits();
     }
     public void LogStringWithReturn(string stringToAdd)
     {
