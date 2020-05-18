@@ -7,7 +7,7 @@ using UnityEngine;
 public class CExit
 {
     //Clave de busqueda para identificar cual es la salida correcta
-    public string keystring;
+    public string keyString;
     //Descripcion de la salida
     public string exitDescription;
     //Valor de la habitacion

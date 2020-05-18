@@ -63,13 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\CActionResponse.cs" />
+    <Compile Include="Assets\Script\CChangeRoomResponse.cs" />
+    <Compile Include="Assets\Script\CExamine.cs" />
     <Compile Include="Assets\Script\CExit.cs" />
     <Compile Include="Assets\Script\CGameController.cs" />
     <Compile Include="Assets\Script\CGo.cs" />
     <Compile Include="Assets\Script\CInputAction.cs" />
+    <Compile Include="Assets\Script\CInteractableItems.cs" />
+    <Compile Include="Assets\Script\CInteractableObject.cs" />
+    <Compile Include="Assets\Script\CInteraction.cs" />
+    <Compile Include="Assets\Script\CInventory.cs" />
     <Compile Include="Assets\Script\CRoom.cs" />
     <Compile Include="Assets\Script\CRoomNavigation.cs" />
+    <Compile Include="Assets\Script\CTake.cs" />
     <Compile Include="Assets\Script\CTextInput.cs" />
+    <Compile Include="Assets\Script\CUse.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Github/TextAdventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
