@@ -11,15 +11,12 @@ public class CGameController : MonoBehaviour
 
     [HideInInspector] public CRoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
-    [HideInInspector] public CInteractableItems interactableItems;
 
     List<string> actionLog = new List<string>();
-
 
     // Use this for initialization
     void Awake()
     {
-        interactableItems = GetComponent<CInteractableItems>();
         roomNavigation = GetComponent<CRoomNavigation>();
     }
 
@@ -52,50 +49,10 @@ public class CGameController : MonoBehaviour
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
-        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
-    }
-
-    void PrepareObjectsToTakeOrExamine(CRoom currentRoom)
-    {
-        for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
-        {
-            string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom, i);
-            if (descriptionNotInInventory != null)
-            {
-                interactionDescriptionsInRoom.Add(descriptionNotInInventory);
-            }
-
-            CInteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
-
-            for (int j = 0; j < interactableInRoom.interactions.Length; j++)
-            {
-                CInteraction interaction = interactableInRoom.interactions[j];
-                if (interaction.inputAction.keyWord == "examine")
-                {
-                    interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
-                }
-
-                if (interaction.inputAction.keyWord == "take")
-                {
-                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
-                }
-            }
-        }
-    }
-
-    public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
-    {
-        if (verbDictionary.ContainsKey(noun))
-        {
-            return verbDictionary[noun];
-        }
-
-        return "You can't " + verb + " " + noun;
     }
 
     void ClearCollectionsForNewRoom()
     {
-        interactableItems.ClearCollections();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }
@@ -103,5 +60,11 @@ public class CGameController : MonoBehaviour
     public void LogStringWithReturn(string stringToAdd)
     {
         actionLog.Add(stringToAdd + "\n");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }

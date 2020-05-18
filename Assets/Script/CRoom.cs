@@ -9,6 +9,6 @@ public class CRoom : ScriptableObject
     public string description;
     public string roomName;
     public CExit[] exits;
-    public CInteractableObject[] interactableObjectsInRoom;
+
 
 }
