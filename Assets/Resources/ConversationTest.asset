@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: ConversationTest
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: c5925a2f-6f17-4c3d-ad66-85c029c4d8f8
+    PortName: Next
+    TargetNodeGUID: 40276d40-3c2a-4580-acd8-c079d8a2d56e
+  - BaseNodeGUID: ed962ca1-f52b-4fca-afb1-d11cd7cbe926
+    PortName: Podria Venir?
+    TargetNodeGUID: dd1a87b8-ed4f-481a-be35-a59516ef13fd
+  - BaseNodeGUID: 40276d40-3c2a-4580-acd8-c079d8a2d56e
+    PortName: Como Estas?
+    TargetNodeGUID: 31f8abb4-01e3-4eb6-9592-bbd123e20313
+  - BaseNodeGUID: 40276d40-3c2a-4580-acd8-c079d8a2d56e
+    PortName: Como esta papa?
+    TargetNodeGUID: ed962ca1-f52b-4fca-afb1-d11cd7cbe926
+  - BaseNodeGUID: 40276d40-3c2a-4580-acd8-c079d8a2d56e
+    PortName: Puedo Pedirte un Favor
+    TargetNodeGUID: 6c713152-cf03-440e-9c2a-216d101e9be7
+  - BaseNodeGUID: dd1a87b8-ed4f-481a-be35-a59516ef13fd
+    PortName: Pppp..pero el me lo prometio
+    TargetNodeGUID: 6467b090-5c64-4e38-9f2b-6b3436d3de87
+  - BaseNodeGUID: 6467b090-5c64-4e38-9f2b-6b3436d3de87
+    PortName: Que!!, No!
+    TargetNodeGUID: 25a7bba7-6ffd-4a16-9ff2-6345b2a2ad67
+  - BaseNodeGUID: 6467b090-5c64-4e38-9f2b-6b3436d3de87
+    PortName: Claro mama, me encantaria conseguir algo de "exeriencia". jeje...
+    TargetNodeGUID: 8899e279-117c-43c6-9039-047d41122c24
+  - BaseNodeGUID: 6467b090-5c64-4e38-9f2b-6b3436d3de87
+    PortName: Claro...como si quiciera pasar el resto de mi vida en leotardos, y
+      ustrando cosas con mi lengua
+    TargetNodeGUID: 5f22ba4a-f998-478f-830a-a68834124b58
+  DialogueNodeData:
+  - NodeGUID: ed962ca1-f52b-4fca-afb1-d11cd7cbe926
+    nameCharacter: moffin
+    DialogueText: Bueno, el siempre es asi
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 917.6, y: 284}
+  - NodeGUID: 6c713152-cf03-440e-9c2a-216d101e9be7
+    nameCharacter: moffin
+    DialogueText: Claro Tesoro, que nesecitas?
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 890.4, y: 459.2}
+  - NodeGUID: 40276d40-3c2a-4580-acd8-c079d8a2d56e
+    nameCharacter: Moffin
+    DialogueText: Hola querida, como has estado mi hija favorita
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 252, y: 157.59999}
+  - NodeGUID: 31f8abb4-01e3-4eb6-9592-bbd123e20313
+    nameCharacter: Moffin
+    DialogueText: Estoy bien, jeje trabajando, tu sabes como es querida
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 908, y: 3.2000008}
+  - NodeGUID: dd1a87b8-ed4f-481a-be35-a59516ef13fd
+    nameCharacter: Moffin
+    DialogueText: No eso seria imposible, solo viene una ves la mes
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 1408, y: 284}
+  - NodeGUID: 6467b090-5c64-4e38-9f2b-6b3436d3de87
+    nameCharacter: Moffin
+    DialogueText: No me Hagas ojos de cachorrito, si te sigues comportando asi, tal
+      vez y te contrate
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 2016.8, y: 292.80002}
+  - NodeGUID: 25a7bba7-6ffd-4a16-9ff2-6345b2a2ad67
+    nameCharacter: Moffin
+    DialogueText: Jeje, Solo bromeaba.... no quiero que tomes este camino
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 2808.8, y: 154.4}
+  - NodeGUID: 8899e279-117c-43c6-9039-047d41122c24
+    nameCharacter: Moffin
+    DialogueText: ....wow....no esperaba esa respuesta..., estas un poco, rara...
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 2894.4, y: 340.80002}
+  - NodeGUID: 5f22ba4a-f998-478f-830a-a68834124b58
+    nameCharacter: Moffin
+    DialogueText: "Bueno NI\xD1A, vas a trabajar hasta que cambies de actitud, yo
+      no crie a una caprichosa"
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 2835.2, y: 510.40002}
+  ExposedProperties: []
+  CommentBlockData: []

@@ -60,16 +60,97 @@
     <Analyzer Include="E:\UnityInstalled\2022.3.16f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\CGameController.cs" />
-    <Compile Include="Assets\Script\CExit.cs" />
-    <Compile Include="Assets\Script\CRoomNavigation.cs" />
-    <Compile Include="Assets\Script\CTextInput.cs" />
-    <Compile Include="Assets\Script\CRoom.cs" />
-    <Compile Include="Assets\Script\CInputAction.cs" />
-    <Compile Include="Assets\Script\CGo.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Controllers\CCharacterTestScript.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Camera\CCameraManager.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\NodeBasedDialogueSystem-master\Samples\DialogueSystemDemo\DialogueExampler.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CExit.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\Level\CLevelController.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\DialogueManager\CDialogue.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Controllers\CAnimationController.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CTextInput.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\DialogueManager\CDialogueManager.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\EventSystem\CGameEventScriptable.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CGo.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CGenericCharacter.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Observer Pattern\CObserverCsharpAction.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CLoadImage.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Examples\cGameEventListenerCsharp.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Observer Pattern\CObserverCsharpDelegates.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CInputAction.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CObject.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Mechanics\CSwitch.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Ui\CUiAnimation.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CRoom.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\EventSystem\CGameEventListener.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CRoomNavigation.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Characters\CMoffin.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CGenericObject.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Mechanics\CGameEvent.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Observer Pattern\CObserver.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Characters\CLoop.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CAsteroid.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CObjectColor.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\Level\CSaveSystem.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CPlayer.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CCharacter.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\NodeBasedDialogueSystem-master\Samples\DialogueSystemDemo\DialogueParser.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\scriptableObject\SaveAndLoadSystem\CPlayerDefault.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\DialogueManager\CDialogueTrigger.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Event\CEventChangeColor.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\EventSystem\CCharacterController.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\NodeBasedDialogueSystem-master\Samples\DialogueSystemDemo\CDialogueLoopDialogue.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\scriptableObject\CAnimData.cs" />
+    <Compile Include="Assets\AventureGameEngine\Script\CGameController.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Examples\CGameEventListener.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\scriptableObject\CItemData.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\scriptableObject\SaveAndLoadSystem\CCharacterDatat.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Mechanics\CLevelManager.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Characters\CStiff.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CManagerObject.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Mechanics\CPointToClick.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\scriptableObject\SaveAndLoadSystem\CPlayerData.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Iterface\Iinteract.cs" />
+    <Compile Include="Assets\LoopEngine\Scripts\Objects\CDoor.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Sprites\License.txt" />
+    <None Include="Assets\AventureGameEngine\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\AventureGameEngine\Sprites\License.txt" />
+    <None Include="Assets\AventureGameEngine\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\AventureGameEngine\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1058,6 +1139,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Editor.csproj">
+      <Project>{FD65AA51-684B-2BD8-F621-8B34A5001C25}</Project>
+      <Name>Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Runtime.csproj">
+      <Project>{694BBDB9-0172-7EA3-1951-1B9A6DCCBF5B}</Project>
+      <Name>Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
