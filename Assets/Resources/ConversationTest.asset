@@ -72,22 +72,22 @@ MonoBehaviour:
     DialogueText: No me Hagas ojos de cachorrito, si te sigues comportando asi, tal
       vez y te contrate
     SpriteCharacter: {fileID: 0}
-    Position: {x: 2016.8, y: 292.80002}
-  - NodeGUID: 25a7bba7-6ffd-4a16-9ff2-6345b2a2ad67
-    nameCharacter: Moffin
-    DialogueText: Jeje, Solo bromeaba.... no quiero que tomes este camino
-    SpriteCharacter: {fileID: 0}
-    Position: {x: 2808.8, y: 154.4}
+    Position: {x: 2068.8, y: 284}
   - NodeGUID: 8899e279-117c-43c6-9039-047d41122c24
     nameCharacter: Moffin
     DialogueText: ....wow....no esperaba esa respuesta..., estas un poco, rara...
     SpriteCharacter: {fileID: 0}
-    Position: {x: 2894.4, y: 340.80002}
+    Position: {x: 2959.2, y: 332}
   - NodeGUID: 5f22ba4a-f998-478f-830a-a68834124b58
     nameCharacter: Moffin
     DialogueText: "Bueno NI\xD1A, vas a trabajar hasta que cambies de actitud, yo
       no crie a una caprichosa"
     SpriteCharacter: {fileID: 0}
-    Position: {x: 2835.2, y: 510.40002}
+    Position: {x: 2959.2, y: 520}
+  - NodeGUID: 25a7bba7-6ffd-4a16-9ff2-6345b2a2ad67
+    nameCharacter: Moffin
+    DialogueText: Jeje, Solo bromeaba.... no quiero que tomes este camino
+    SpriteCharacter: {fileID: 0}
+    Position: {x: 2959.2, y: 140}
   ExposedProperties: []
   CommentBlockData: []
