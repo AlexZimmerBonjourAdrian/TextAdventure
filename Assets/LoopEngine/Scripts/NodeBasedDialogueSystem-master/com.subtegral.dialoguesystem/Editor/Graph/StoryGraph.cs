@@ -86,6 +86,8 @@ namespace Subtegral.DialogueSystem.Editor
             _graphView.Add(miniMap);
         }
 
+
+
         private void GenerateBlackBoard()
         {
             var blackboard = new Blackboard(_graphView);

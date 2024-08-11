@@ -58,6 +58,7 @@ namespace Subtegral.DialogueSystem.Editor
             var mousePosition = _window.rootVisualElement.ChangeCoordinatesTo(_window.rootVisualElement.parent,
                 context.screenMousePosition - _window.position.position);
             var graphMousePosition = _graphView.contentViewContainer.WorldToLocal(mousePosition);
+           // _graphView.CreateNewStartDialogueNode(graphMousePosition);
             switch (SearchTreeEntry.userData)
             {
                 case DialogueNode dialogueNode:

@@ -91,14 +91,12 @@
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\LoopEngine\Scripts\Mechanics\CGameEvent.cs" />
     <Compile Include="Assets\LoopEngine\Scripts\Design-Patterns\Behavioral Patterns\Observer Pattern\CObserver.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\LoopEngine\Scripts\NodeBasedDialogueSystem-master\Samples\DialogueSystemDemo\DialogueParser.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\LoopEngine\Scripts\Event\CEventChangeColor.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\AventureGameEngine\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />

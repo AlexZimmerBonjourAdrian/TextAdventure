@@ -136,6 +136,39 @@ namespace Subtegral.DialogueSystem.Editor
             AddElement(CreateNode(nodeName, position,Sprite,nameCharacter));
         }
 
+        public void CreateNewStartDialogueNode( Vector2 position)
+        {
+            AddElement(CreateNodeStart(position));
+        }
+
+          public DialogueNode CreateNodeStart( Vector2 position)
+        {
+            var tempDialogueNode = new DialogueNode()
+            {
+                title = "Start",
+                GUID = Guid.NewGuid().ToString()
+               
+            };
+            tempDialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
+            var outputPort = GetPortInstance(tempDialogueNode, Direction.Output, Port.Capacity.Multi);
+
+           // inputPort.portName = "Input";
+            outputPort.portName = "OutputS";
+            tempDialogueNode.inputContainer.Add(outputPort);
+            tempDialogueNode.RefreshExpandedState();
+            tempDialogueNode.RefreshPorts();
+            tempDialogueNode.SetPosition(new Rect(position,
+                DefaultNodeSize)); 
+            //To-Do: implement screen center instantiation positioning  
+           // SpriteCharacterDefault = tempDialogueNode.SpriteCharacter;
+            //TODO: load sprinte in editor
+            //OR
+            //Load image using Events
+            //var Sprite = new Image(() = >{ Addimage(Image) ;)
+            return tempDialogueNode;
+        }
+
+
         public DialogueNode CreateNode(string nodeName, Vector2 position, Texture2D Sprite, string nameCharacter)
         {
             var tempDialogueNode = new DialogueNode()
@@ -146,10 +179,12 @@ namespace Subtegral.DialogueSystem.Editor
                 NameCharacter = nameCharacter,
                 SpriteCharacter = Sprite,
                 
+
                
                 GUID = Guid.NewGuid().ToString()
                
             };
+            var outputPort = GetPortInstance(tempDialogueNode, Direction.Output, Port.Capacity.Single);
             tempDialogueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
             var inputPort = GetPortInstance(tempDialogueNode, Direction.Input, Port.Capacity.Multi);
             inputPort.portName = "Input";
@@ -158,12 +193,18 @@ namespace Subtegral.DialogueSystem.Editor
             tempDialogueNode.RefreshPorts();
             tempDialogueNode.SetPosition(new Rect(position,
                 DefaultNodeSize)); //To-Do: implement screen center instantiation positioning
+            outputPort.portName = "Outputs";
+            tempDialogueNode.outputContainer.Add(outputPort);
+            tempDialogueNode.RefreshExpandedState();
+            tempDialogueNode.RefreshPorts();
+            tempDialogueNode.SetPosition(new Rect(position,
+                DefaultNodeSize));
+
 
             var textField = new TextField("");
             var textFieldCharacter = new TextField("");
 
             var SpriteCharacter =  DefaultSprite;
-           // var SpriteCharacterDefault = DefaultSprite;
             textField.RegisterValueChangedCallback(evt =>
             {
                
@@ -190,15 +231,17 @@ namespace Subtegral.DialogueSystem.Editor
 
             textFieldCharacter.SetValueWithoutNotify(tempDialogueNode.NameCharacter);
             textField.SetValueWithoutNotify(tempDialogueNode.title);
-           // SpriteCharacterDefault = tempDialogueNode.SpriteCharacter;
           
             tempDialogueNode.mainContainer.Add(textField);
             tempDialogueNode.mainContainer.Add(textFieldCharacter);
 
-            var button = new Button(() => { AddChoicePort(tempDialogueNode); })
+            var button = new Button(() => { AddChoicePort(tempDialogueNode);
+            })
             {
                 text = "Add Choice"
             };
+           
+            
             //TODO: load sprinte in editor
             //OR
             //Load image using Events
@@ -209,13 +252,12 @@ namespace Subtegral.DialogueSystem.Editor
         }
 
 
-        public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "")
+        public void AddChoicePort(DialogueNode nodeCache,string overriddenPortName = "")
         {
             var generatedPort = GetPortInstance(nodeCache, Direction.Output);
             var portLabel = generatedPort.contentContainer.Q<Label>("type");
             generatedPort.contentContainer.Remove(portLabel);
-
-            var outputPortCount = nodeCache.outputContainer.Query("connector").ToList().Count();
+            var outputPortCount = nodeCache.outputContainer.Query("connector").ToList().Count()-1;
             var outputPortName = string.IsNullOrEmpty(overriddenPortName)
                 ? $"Option {outputPortCount + 1}"
                 : overriddenPortName;
@@ -227,7 +269,7 @@ namespace Subtegral.DialogueSystem.Editor
                 value = outputPortName
             };
             textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
-            generatedPort.contentContainer.Add(new Label("  "));
+            generatedPort.contentContainer.Add(new Label(""));
             generatedPort.contentContainer.Add(textField);
             var deleteButton = new Button(() => RemovePort(nodeCache, generatedPort))
             {
@@ -238,6 +280,8 @@ namespace Subtegral.DialogueSystem.Editor
             nodeCache.outputContainer.Add(generatedPort);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();
+            //generatedPort.SetPosition(new Rect(nodeCache.GetPosition().position,
+            //   DefaultNodeSize));
         }
 
         private void RemovePort(Node node, Port socket)
